@@ -1,0 +1,12 @@
+{
+	"layer": "top",
+	"exclusive": false,
+	"position": "top",
+	"height": 40,
+	"margin-top": 0,
+  	"margin-left": 1126,
+	"margin-right": 1126,
+	"modules-left": [],
+	"modules-center": ["clock"],
+	"modules-right": [""],
+}
