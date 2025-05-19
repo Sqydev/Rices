@@ -9,7 +9,7 @@
   	"margin-left": 1126,
 	"margin-right": 1126,
 	"border-left": 10,
-	"modules-left": [],
+	"modules-left": ["custom/archorsomething"],
 	"modules-center": ["clock"],
 	"modules-right": ["bluetooth", "network"],
 	
@@ -33,6 +33,12 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
-    	"on-click-right": "blueman-manager",
-    } 
+		"on-click": "",
+    	"on-click-right": "",
+    },
+
+	"custom/archorsomething": {
+      "format": " ",
+      "tooltip": "I use arch btw"
+    }
 }

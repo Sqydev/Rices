@@ -1,10 +1,22 @@
 * {
 	font-family: JetBrainsMono Nerd Font, monospace;
-	font-size: 13px;
+	font-size: 17px;
 	color: #ebdbb2;
 }
 
 window#waybar {
 	background-color: rgba(0, 0, 0, 1);
 	border-radius: 0 0 14px 14px;
+}
+
+#clock {
+    color:@color7;
+}
+
+#network {
+    color:@color7;
+}
+
+#bluetooth {
+    color:@color7;
 }
