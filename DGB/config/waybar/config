@@ -1,12 +1,38 @@
 {
 	"layer": "top",
 	"exclusive": false,
+	"autohide": true,
+	"hide-on-fullscreen": true,
 	"position": "top",
 	"height": 40,
 	"margin-top": 0,
   	"margin-left": 1126,
 	"margin-right": 1126,
+	"border-left": 10,
 	"modules-left": [],
 	"modules-center": ["clock"],
-	"modules-right": [""],
+	"modules-right": ["bluetooth", "network"],
+	
+	"network": {
+        "format-wifi": "  ",
+        "format-ethernet":"  ",
+        "format-disconnected": "  ",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)   ",
+        "tooltip-format-ethernet": "{ifname} 🖧 ",
+		"on-click": "alacritty --command nmtui"
+	},
+	
+	"bluetooth": {
+        "format-on": "󰂯 ",
+        "format-off": "BT-off",
+        "format-disabled": "󰂲 ",
+        "format-connected-battery": "{device_battery_percentage}% 󰂯 ",
+        "format-alt": "{device_alias} 󰂯 ",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+    	"on-click-right": "blueman-manager",
+    } 
 }
