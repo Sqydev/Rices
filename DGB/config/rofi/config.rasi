@@ -1,10 +1,11 @@
-@theme "gruvbox-dark-soft.rasi"
+@theme "gruvbox-dark.rasi"
 
 * {
 	border: 0;
 	border-radius: 2;
 	margin: 0;
 	padding: 3;	
+	color: #d5c4a1;
 }
 
 configuration {
@@ -13,7 +14,6 @@ configuration {
   	modi: "drun";
   	show-icons: false;
   	drun-display-format: "{name}";
-
 }
 
 window {
