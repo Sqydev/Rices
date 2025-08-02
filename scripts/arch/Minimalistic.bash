@@ -13,7 +13,7 @@ while true; do
     case $yn in
         [1]* ) break;;
         [2]* ) exit;;
-        * ) echo "Please answer 1 or 2";;
+        * ) exit;;
     esac
 done
 
