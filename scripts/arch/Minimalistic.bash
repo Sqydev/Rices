@@ -40,12 +40,10 @@ ln -s ~/.config/Rices/Types/Minimalistic/waybar ~/.config/waybar
 ln -s ~/.config/Rices/Types/Minimalistic/alacritty ~/.config/alacritty
 ln -s ~/.config/Rices/Types/Minimalistic/fastfetch ~/.config/fastfetch
 
-# Print things to download
-# Btw. Here's space so you can just do f.e. ":.,.+6s/ /pkgs." in vim
-echo "List of pkgs to add to your nixos config:"
-echo " hyprland"
-echo " rofi"
-echo " waybar"
-echo " alacritty"
-echo " fastfetch"
-echo " waybar"
+# Download pkgs
+sudo pacman -S hyprland
+sudo pacman -S rofi
+sudo pacman -S waybar
+sudo pacman -S alacritty
+sudo pacman -S fastfetch
+sudo pacman -S waypaper
