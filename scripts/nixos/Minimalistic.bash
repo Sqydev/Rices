@@ -1,7 +1,27 @@
-# Tu zrób ostrzeżenie że usunie config (lista żeczy)
+# Ask if user is sure
+echo "Warning: This script WILL delete configs of those packages:"
+echo "hyprland"
+echo "rofi"
+echo "waybar"
+echo "alacritty"
+echo "fastfetch"
+echo
+echo "1) I accept the consequences"
+echo "2) I do NOT"
+while true; do
+	read -p "> " yn
+    case $yn in
+        [1]* ) break;;
+        [2]* ) exit;;
+        * ) echo "Please answer 1 or 2";;
+    esac
+done
 
-# Remove Rices if exists
+
+# Remove Rices if exists and install again
 rm -rf ~/.config/Rices
+
+cd ~/.config
 
 git clone https://github.com/Sqydev/Rices.git
 
@@ -20,7 +40,7 @@ ln -s ~/.config/Rices/Types/Minimalistic/waybar ~/.config/waybar
 ln -s ~/.config/Rices/Types/Minimalistic/alacritty ~/.config/alacritty
 ln -s ~/.config/Rices/Types/Minimalistic/fastfetch ~/.config/fastfetch
 
-# Tu zrób info co daje żeczy do dodania do config.nix
+# Print things to download
 # Btw. Here's space so you can just do f.e. ":.,.+6s/ /pkgs." in vim
 echo "List of pkgs to add to your nixos config:"
 echo " hyprland"
