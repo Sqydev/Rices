@@ -1,7 +1,8 @@
 # Ask what Rice
 echo "Select rice:"
 echo "1) Minimalistic"
-read -p "> " RICE
+echo -n "> "
+read RICE
 
 switch $RICE
     case 1
