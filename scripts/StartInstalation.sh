@@ -1,0 +1,2 @@
+mkdir ~/.config/Rices/temp
+
