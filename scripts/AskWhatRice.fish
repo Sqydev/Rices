@@ -3,7 +3,7 @@
 # Ask what Rice
 echo "Select rice:"
 echo "1) Minimalistic"
-echo -n "> "
+echo "> "
 read RICE
 
 switch $RICE
