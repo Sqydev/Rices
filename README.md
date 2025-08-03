@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-    <h1>[ Overview ]</h1>
+    <h2>[ Overview ]</h2>
     <h3></h3>
 </div>
 
