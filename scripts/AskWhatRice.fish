@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 # Ask what Rice
 echo "Select rice:"
 echo "1) Minimalistic"
@@ -26,3 +28,4 @@ set SCRIPT_PATH ~/.config/hypr/temp/Instalation.fish
 
 curl -Ls $SCRIPT_URL -o $SCRIPT_PATH
 fish $SCRIPT_PATH
+
