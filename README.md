@@ -1,5 +1,8 @@
-# Rices
-My Rices
+*[Sqyd's Rices]
 
-TODO:
-Shell config done by script
+
+<details>
+  <summary>Minimalistic</summary>
+  Minimalistic des. here
+
+</details>
