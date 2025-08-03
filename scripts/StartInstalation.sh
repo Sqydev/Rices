@@ -1,5 +1,5 @@
 mkdir -p ~/.config/hypr/temp
 
-curl -L "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/AskWhatRice.sh" -o ~/.config/hypr/temp/AskWhatRice.sh
+curl -L "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/AskWhatRice.bash" -o ~/.config/hypr/temp/AskWhatRice.bash
 
-bash ~/.config/hypr/temp/AskWhatRice.sh
+bash ~/.config/hypr/temp/AskWhatRice.bash || echo "You need bash"
