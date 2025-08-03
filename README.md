@@ -17,10 +17,14 @@
 </div>
 
 To install write this to your terminal:
+For bash like shells:
 ```sh 
-bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.sh")"
+bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.bash")"
 ```
-Yes, you need bash
+For fish like shells:
+```sh 
+fish -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.fish")"
+```
 
 <div align="center">
     <h2> Overview </h2>
