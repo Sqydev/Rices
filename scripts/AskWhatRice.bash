@@ -27,6 +27,6 @@ fi
 
 
 # Do scripty
-curl -L "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/${OS}.bash" -o ~/.config/hypr/temp/Instalation.bash
+curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/${OS}.bash" -o ~/.config/hypr/temp/Instalation.bash
 
 bash ~/.config/hypr/temp/Instalation.bash
