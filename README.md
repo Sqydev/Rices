@@ -18,7 +18,7 @@
 
 To install write this to your terminal:
 ```sh 
-bash <(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.sh")>
+curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.sh" | bash
 ```
 Yes, you need bash
 
