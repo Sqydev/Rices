@@ -12,6 +12,18 @@
 </div>
 
 <div align="center">
+    <h2> Instalation </h2>
+    <h3></h3>
+</div>
+
+<details>
+  <summary>Minimalistic: </summary>
+  Minimalistic instalation url to script and instructions here
+
+</details>
+
+
+<div align="center">
     <h2> Overview </h2>
     <h3></h3>
 </div>
