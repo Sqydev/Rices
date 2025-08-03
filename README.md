@@ -16,12 +16,11 @@
     <h3></h3>
 </div>
 
-<details>
-  <summary>Minimalistic: </summary>
-  Minimalistic instalation url to script and instructions here
-
-</details>
-
+To install write this to your terminal:
+```sh 
+bash <(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.sh")>
+```
+Yes, you need bash
 
 <div align="center">
     <h2> Overview </h2>
