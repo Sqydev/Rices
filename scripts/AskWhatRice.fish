@@ -25,4 +25,3 @@ set SCRIPT_PATH ~/.config/hypr/temp/Instalation.fish
 
 curl -Ls $SCRIPT_URL -o $SCRIPT_PATH
 fish $SCRIPT_PATH
-
