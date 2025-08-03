@@ -26,8 +26,6 @@ end
 set SCRIPT_URL "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/$RICE_NAME/Fish/$OS.fish"
 set SCRIPT_PATH ~/.config/hypr/temp/Instalation.fish
 
-echo $SCRIPT_URL
-
 curl -Ls $SCRIPT_URL -o $SCRIPT_PATH
 fish $SCRIPT_PATH
 
