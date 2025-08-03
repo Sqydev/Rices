@@ -12,8 +12,10 @@ while true; do
 	read -p "> " yn
     case $yn in
         [1]* ) break;;
-        [2]* ) rm -rf ~/.config/hypr/temp & exit;;
-        * ) rm -rf ~/.config/hypr/temp & exit;;
+        [2]* ) rm -rf ~/.config/hypr/temp 
+			exit;;
+        * ) rm -rf ~/.config/hypr/temp 
+			exit;;
     esac
 done
 
