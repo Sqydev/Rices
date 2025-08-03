@@ -32,6 +32,7 @@ rm -rf ~/.config/waybar
 rm -rf ~/.config/alacritty
 rm -rf ~/.config/fastfetch
 rm -rf ~/.config/waypaper
+rm -rf ~/.config/oh-my-posh
 
 # Link new ones
 ln -s ~/.config/Rices/Types/Minimalistic/hypr ~/.config/hypr
@@ -39,11 +40,16 @@ ln -s ~/.config/Rices/Types/Minimalistic/rofi ~/.config/rofi
 ln -s ~/.config/Rices/Types/Minimalistic/waybar ~/.config/waybar
 ln -s ~/.config/Rices/Types/Minimalistic/alacritty ~/.config/alacritty
 ln -s ~/.config/Rices/Types/Minimalistic/fastfetch ~/.config/fastfetch
+ln -s ~/.config/Rices/Types/Minimalistic/oh-my-posh ~/.config/oh-my-posh
 
-# Download pkgs
-sudo pacman -S hyprland
-sudo pacman -S rofi
-sudo pacman -S waybar
-sudo pacman -S alacritty
-sudo pacman -S fastfetch
-sudo pacman -S waypaper
+# Print things to download
+# Btw. Here's space so you can just do f.e. ":.,.+6s/ /pkgs." in vim
+echo "List of pkgs to add to your nixos config:"
+echo " hyprland"
+echo " rofi"
+echo " waybar"
+echo " alacritty"
+echo " fastfetch"
+echo " waybar"
+echo
+echo "And if you want my ohmyposh+fastfetch configs are in ~/.config/fastfetch/ && ~/.config/oh-my-posh/" 
