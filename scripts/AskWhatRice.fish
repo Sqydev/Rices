@@ -2,27 +2,27 @@
 echo "Select rice:"
 echo "1) Minimalistic"
 read -p "> " RICE
-case $RICE in
-    1)
-        RICE_NAME="Minimalistic"
-        ;;
-    *)
-		exit 1
-        ;;
-esac
 
+switch $RICE
+    case 1
+        set RICE_NAME "Minimalistic"
+    case '*'
+        exit 1
+end
 
-# Find what os
-if grep -qi "NixOs" /etc/os-release; then
-    OS="NixOs"
-elif grep -qi "Arch" /etc/os-release; then
-    OS="Arch"
+# Find what OS
+if grep -qi "NixOs" /etc/os-release
+    set OS "NixOs"
+else if grep -qi "Arch" /etc/os-release
+    set OS "Arch"
 else
-	exit 1
-fi
-
+    exit 1
+end
 
 # Do scripts
-curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/fish/${OS}.fish" -o ~/.config/hypr/temp/Instalation.fish
+set SCRIPT_URL "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/$RICE_NAME/fish/$OS.fish"
+set SCRIPT_PATH ~/.config/hypr/temp/Instalation.fish
 
-bash ~/.config/hypr/temp/Instalation.fish
+curl -Ls $SCRIPT_URL -o $SCRIPT_PATH
+fish $SCRIPT_PATH
+
