@@ -27,7 +27,7 @@ fi
 
 
 # Do scripts
-rm -rf ~/.config/hypr/temp/
+rm -rf ~/.config/hypr/temp
 curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/${OS}.bash" -o ~/.config/hypr/temp/Instalation.bash
 
 bash ~/.config/hypr/temp/Instalation.bash
