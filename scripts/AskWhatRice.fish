@@ -23,6 +23,6 @@ fi
 
 
 # Do scripts
-curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/bash/${OS}.bash" -o ~/.config/hypr/temp/Instalation.bash
+curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/fish/${OS}.fish" -o ~/.config/hypr/temp/Instalation.fish
 
-bash ~/.config/hypr/temp/Instalation.bash
+bash ~/.config/hypr/temp/Instalation.fish
