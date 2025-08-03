@@ -37,6 +37,7 @@ rm -rf ~/.config/waybar
 rm -rf ~/.config/alacritty
 rm -rf ~/.config/fastfetch
 rm -rf ~/.config/waypaper
+rm -rf ~/.config/oh-my-posh
 
 # Link new ones
 ln -s ~/.config/Rices/Types/Minimalistic/hypr ~/.config/hypr
@@ -44,6 +45,7 @@ ln -s ~/.config/Rices/Types/Minimalistic/rofi ~/.config/rofi
 ln -s ~/.config/Rices/Types/Minimalistic/waybar ~/.config/waybar
 ln -s ~/.config/Rices/Types/Minimalistic/alacritty ~/.config/alacritty
 ln -s ~/.config/Rices/Types/Minimalistic/fastfetch ~/.config/fastfetch
+ln -s ~/.config/Rices/Types/Minimalistic/oh-my-posh ~/.config/oh-my-posh
 
 # Download pkgs
 sudo pacman -S hyprland
@@ -51,5 +53,12 @@ sudo pacman -S rofi
 sudo pacman -S waybar
 sudo pacman -S alacritty
 sudo pacman -S fastfetch
+sudo pacman -S waypaper
+
+# Inform user
+echo
+echo
+echo "Now it's to you to setup your shell. If you want my ohmyposh && fastfetch you have it's config in ~/.config/oh-my-posh/ && ~/.config/fastfetch/"
+echo
 
 end
