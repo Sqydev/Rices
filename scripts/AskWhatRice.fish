@@ -1,5 +1,3 @@
-#!/usr/bin/env fish
-
 # Ask what Rice
 echo "Select rice:"
 echo "1) Minimalistic"
