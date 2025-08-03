@@ -9,7 +9,8 @@ switch $RICE
     case 1
         set RICE_NAME "Minimalistic"
     case '*'
-        exit 1
+        rm -rf ~/.config/hypr/temp
+		exit 1
 end
 
 # Find what OS
@@ -18,6 +19,7 @@ if grep -qi "NixOs" /etc/os-release
 else if grep -qi "Arch" /etc/os-release
     set OS "Arch"
 else
+	rm -rf ~/.config/hypr/temp
     exit 1
 end
 

@@ -7,6 +7,7 @@ case $RICE in
         RICE_NAME="Minimalistic"
         ;;
     *)
+		rm -rf ~/.config/hypr/temp
 		exit 1
         ;;
 esac
@@ -18,6 +19,7 @@ if grep -qi "NixOs" /etc/os-release; then
 elif grep -qi "Arch" /etc/os-release; then
     OS="Arch"
 else
+	rm -rf ~/.config/hypr/temp
 	exit 1
 fi
 
