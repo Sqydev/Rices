@@ -22,4 +22,4 @@ end
 # Do scripts
 set SCRIPT_URL "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/$RICE_NAME/Fish/$OS.fish"
 
-source -c "(curl -Ls $SCRIPT_URL)"
+fish -c "(curl -Ls $SCRIPT_URL)"
