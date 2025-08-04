@@ -40,12 +40,12 @@ rm -rf ~/.config/waypaper
 rm -rf ~/.config/oh-my-posh
 
 # Link new ones
-ln -s ~/.config/Rices/Types/Minimalistic/hypr ~/.config/hypr
-ln -s ~/.config/Rices/Types/Minimalistic/rofi ~/.config/rofi
-ln -s ~/.config/Rices/Types/Minimalistic/waybar ~/.config/waybar
-ln -s ~/.config/Rices/Types/Minimalistic/alacritty ~/.config/alacritty
-ln -s ~/.config/Rices/Types/Minimalistic/fastfetch ~/.config/fastfetch
-ln -s ~/.config/Rices/Types/Minimalistic/oh-my-posh ~/.config/oh-my-posh
+ln -s ~/.config/Rices/rices/Minimalistic/hypr ~/.config/hypr
+ln -s ~/.config/Rices/rices/Minimalistic/rofi ~/.config/rofi
+ln -s ~/.config/Rices/rices/Minimalistic/waybar ~/.config/waybar
+ln -s ~/.config/Rices/rices/Minimalistic/alacritty ~/.config/alacritty
+ln -s ~/.config/Rices/rices/Minimalistic/fastfetch ~/.config/fastfetch
+ln -s ~/.config/Rices/rices/Minimalistic/oh-my-posh ~/.config/oh-my-posh
 
 # Print things to download
 # Btw. Here's space so you can just do f.e. ":.,.+6s/ /pkgs." in vim
