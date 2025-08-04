@@ -23,7 +23,7 @@ bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/m
 ```
 For fish like shells:
 ```sh 
-fish -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/StartInstalation.fish")"
+fish -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/Instalation.fish")"
 ```
 
 <div align="center">
