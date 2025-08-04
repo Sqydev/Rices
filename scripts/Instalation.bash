@@ -23,4 +23,4 @@ fi
 
 
 # Do scripts
-fish -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/Bash/${OS}.bash)"
+bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/Bash/${OS}.bash")"
