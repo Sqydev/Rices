@@ -4,11 +4,9 @@
 </div>
 
 <div align="center">
-
 ![Last Commit](https://img.shields.io/github/last-commit/Sqydev/Rices)
 ![Repo size](https://img.shields.io/github/repo-size/Sqydev/Rices)
 ![Stars](https://img.shields.io/github/stars/Sqydev/Rices)
-
 </div>
 
 <div align="center">
