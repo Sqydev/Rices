@@ -24,3 +24,6 @@ fi
 
 # Do scripts
 bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/Bash/${OS}.bash")"
+
+
+echo "GO TO ~/.config/hypr/conf/Envierment.conf or variation of it and read the comments!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"

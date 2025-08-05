@@ -23,3 +23,5 @@ end
 set SCRIPT_URL "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/$RICE_NAME/Fish/$OS.fish"
 
 fish -c "$(curl -Ls $SCRIPT_URL)"
+
+echo "GO TO ~/.config/hypr/conf/Envierment.conf or variation of it and read the comments!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
