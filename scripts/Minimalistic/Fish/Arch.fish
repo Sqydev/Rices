@@ -46,6 +46,7 @@ ln -s ~/.config/Rices/rices/Minimalistic/waybar ~/.config/waybar
 ln -s ~/.config/Rices/rices/Minimalistic/alacritty ~/.config/alacritty
 ln -s ~/.config/Rices/rices/Minimalistic/fastfetch ~/.config/fastfetch
 ln -s ~/.config/Rices/rices/Minimalistic/oh-my-posh ~/.config/oh-my-posh
+ln -s ~/.config/Rices/rices/Minimalistic/waypaper ~/.config/waypaper
 
 # Download pkgs
 sudo pacman -S hyprland
