@@ -54,3 +54,5 @@ for dir in ./rices/"$rice"/*/; do
     ln -s "$PWD/$dir" "$target"
     echo "Linked $(basename "$dir") -> $target"
 done
+
+# HERE DO INSTALLING SOFTWARE PART
