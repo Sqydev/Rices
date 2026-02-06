@@ -4,9 +4,9 @@ DISTRIB_ID=$(cat /etc/*-release | grep '^DISTRIB_ID=' | cut -d= -f2)
 
 cd ~/.config/
 
-#rm -rf ./Rices/
+rm -rf ./Rices/
 
-#git clone https://github.com/Sqydev/Rices.git
+git clone https://github.com/Sqydev/Rices.git
 
 cd ./Rices/
 
@@ -31,4 +31,26 @@ echo -e "\nGoing further WILL delete directories listed bellow:"
 
 for dir in ./rices/"$rice"/*/; do
     [ -d "$dir" ] && echo "  $(basename "$dir")"
+done
+
+echo -n "DO YOU WANT TO CONTINUE?[y/n]: "
+read warn_choice
+
+if [ "$warn_choice" != "y" ] && [ "$warn_choice" != "Y" ]; then
+	echo "ok :)"
+	exit
+fi
+
+for dir in ./rices/"$rice"/*/; do
+    target="$HOME/.config/$(basename "$dir")"
+    if [ -d "$target" ] || [ -L "$target" ]; then
+        rm -rf "$target"
+        echo "Deleted $target"
+    fi
+done
+
+for dir in ./rices/"$rice"/*/; do
+    target="$HOME/.config/$(basename "$dir")"
+    ln -s "$PWD/$dir" "$target"
+    echo "Linked $(basename "$dir") -> $target"
 done
