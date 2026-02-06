@@ -1,29 +1,34 @@
-# Ask what Rice
-echo "Select rice:"
-echo "1) Minimalistic"
-read -p "> " RICE
-case $RICE in
-    1)
-        RICE_NAME="Minimalistic"
-        ;;
-    *)
-		exit 1
-        ;;
-esac
+#!/usr/bin/env bash
 
+DISTRIB_ID=$(cat /etc/*-release | grep '^DISTRIB_ID=' | cut -d= -f2)
 
-# Find what os
-if grep -qi "NixOs" /etc/os-release; then
-    OS="NixOs"
-elif grep -qi "Arch" /etc/os-release; then
-    OS="Arch"
-else
-	exit 1
+cd ~/.config/
+
+#rm -rf ./Rices/
+
+#git clone https://github.com/Sqydev/Rices.git
+
+cd ./Rices/
+
+mapfile -t rices < <(printf "%s\n" ./rices/* | xargs -n1 basename)
+
+for i in "${!rices[@]}"; do
+    printf "%d. %s\n" $((i+1)) "${rices[$i]}"
+done
+
+echo -n "What rice do you want(type number): "
+
+read choice
+
+if (( choice < 1 || choice > ${#rices[@]} )); then
+	echo "BAD choice :("
+	exit
 fi
 
+rice="${rices[$((choice-1))]}"
 
-# Do scripts
-bash -c "$(curl -Ls "https://raw.githubusercontent.com/Sqydev/Rices/refs/heads/main/scripts/${RICE_NAME}/Bash/${OS}.bash")"
+echo -e "\nGoing further WILL delete directories listed bellow:"
 
-
-echo "GO TO ~/.config/hypr/conf/Envierment.conf or variation of it and read the comments!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+for dir in ./rices/"$rice"/*/; do
+    [ -d "$dir" ] && echo "  $(basename "$dir")"
+done
