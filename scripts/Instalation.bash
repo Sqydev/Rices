@@ -56,3 +56,4 @@ for dir in ./rices/"$rice"/*/; do
 done
 
 # HERE DO INSTALLING SOFTWARE PART
+# And for unsported os's ask the user if they want the script to install binaries for them using github(you know git releases mv things)
