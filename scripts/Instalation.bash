@@ -2,7 +2,7 @@
 
 DISTRIB_ID=$(cat /etc/*-release | grep '^DISTRIB_ID=' | cut -d= -f2)
 
-cd ~/.config/
+cd "$HOME/.config" || exit 1
 
 if [ -d "./Rices" ]; then
     echo -n "Directory ~/.config/Rices WILL get deleted. Do you want to proceed?[y/n]: "
