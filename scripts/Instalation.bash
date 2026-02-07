@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-DISTRIB_ID=$(cat /etc/*-release | grep '^DISTRIB_ID=' | cut -d= -f2)
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    DISTRIB_ID=$ID
+elif [ -f /etc/lsb-release ]; then
+    . /etc/lsb-release
+    DISTRIB_ID=$DISTRIB_ID
+fi
 
 cd "$HOME/.config" || exit 1
 
