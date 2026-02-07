@@ -7,7 +7,7 @@ cd ~/.config/
 if [ -d "./Rices" ]; then
     echo -n "Directory ~/.config/Rices WILL get deleted. Do you want to proceed?[y/n]: "
     read ans
-    if [[ $ans != "y" || $ans != "Y" ]]; then
+    if [[ $ans != "y" && $ans != "Y" ]]; then
         echo "ok:)"
         exit
     fi
