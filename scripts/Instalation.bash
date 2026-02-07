@@ -4,7 +4,16 @@ DISTRIB_ID=$(cat /etc/*-release | grep '^DISTRIB_ID=' | cut -d= -f2)
 
 cd ~/.config/
 
-rm -rf ./Rices/
+if [ -d "./Rices" ]; then
+    echo -n "Directory ~/.config/Rices WILL get deleted. Do you want to proceed?[y/n]: "
+    read ans
+    if [[ $ans != "y" || $ans != "Y" ]]; then
+        echo "ok:)"
+        exit
+    fi
+fi
+
+rm -rf ./Rices
 
 git clone https://github.com/Sqydev/Rices.git
 
