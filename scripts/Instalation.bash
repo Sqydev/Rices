@@ -29,11 +29,14 @@ REPO_HTTPS="https://github.com/Sqydev/Rices.git"
 
 echo "Checking SSH access to GitHub..."
 
-if ssh -T git@github.com -o BatchMode=yes -o ConnectTimeout=5 2>&1 | grep -q "successfully authenticated"; then
+ssh -T git@github.com -o ConnectTimeout=5 > /dev/null 2>&1
+SSH_STATUS=$?
+
+if [ $SSH_STATUS -eq 1 ] || [ $SSH_STATUS -eq 0 ]; then
     echo "SSH detected. Cloning via SSH..."
     git clone "$REPO_SSH" || exit 1
 else
-    echo "SSH not available. Cloning via HTTPS..."
+    echo "SSH test failed (Status: $SSH_STATUS). Trying HTTPS..."
     git clone "$REPO_HTTPS" || exit 1
 fi
 
