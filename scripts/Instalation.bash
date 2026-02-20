@@ -86,18 +86,25 @@ done
 
 echo -e "\nChecking required packages..."
 
-required_pkgs=(
-    alacritty
-    rofi
-	fish
-	fastfetch
-	hyprland
-	oh-my-posh
-	waybar
-	waypaper
-	hyprshot
-	sddm
-)
+common_file="./packages-common.txt"
+rice_file="./rices/$rice/packages.txt"
+
+required_pkgs=()
+
+# Load common packages
+if [ -f "$common_file" ]; then
+    mapfile -t common_pkgs < "$common_file"
+    required_pkgs+=("${common_pkgs[@]}")
+fi
+
+# Load rice specific packages
+if [ -f "$rice_file" ]; then
+    mapfile -t rice_pkgs < "$rice_file"
+    required_pkgs+=("${rice_pkgs[@]}")
+fi
+
+# Remove empty lines
+required_pkgs=($(printf "%s\n" "${required_pkgs[@]}" | sed '/^$/d'))
 
 missing_pkgs=()
 
