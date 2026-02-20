@@ -68,7 +68,7 @@ style = "BoldItalic"
 
 
 [window]
-opacity = 0.7
+opacity = 0.9
 
 [window.padding]
 x = 15
