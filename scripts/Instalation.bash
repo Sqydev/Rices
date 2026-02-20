@@ -95,8 +95,7 @@ required_pkgs=(
 	oh-my-posh
 	waybar
 	waypaper
-	hyprpaper
-	hyprshoot
+	hyprshot
 	sddm
 )
 
