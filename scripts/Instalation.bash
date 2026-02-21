@@ -27,22 +27,13 @@ rm -rf ./Rices
 REPO_SSH="git@github.com:Sqydev/Rices.git"
 REPO_HTTPS="https://github.com/Sqydev/Rices.git"
 
-echo "Checking SSH access to GitHub..."
+echo "Trying SSH clone..."
 
-if ssh -T git@github.com -o ConnectTimeout=5 2>&1 | grep -q "successfully authenticated"; then
-    echo "SSH detected. Cloning via SSH..."
-    git clone "$REPO_SSH"
+if git clone "$REPO_SSH"; then
+    echo "SSH worked."
 else
-    echo "SSH not working. Using HTTPS..."
+    echo "SSH failed. Falling back to HTTPS..."
     git clone "$REPO_HTTPS"
-fi
-
-if [ $SSH_STATUS -eq 1 ] || [ $SSH_STATUS -eq 0 ]; then
-    echo "SSH detected. Cloning via SSH..."
-    git clone "$REPO_SSH" || exit 1
-else
-    echo "SSH test failed (Status: $SSH_STATUS). Trying HTTPS..."
-    git clone "$REPO_HTTPS" || exit 1
 fi
 
 cd ./Rices/ || exit 1
