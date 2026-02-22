@@ -1,3 +1,2 @@
 rofi
-waypaper
 sddm
