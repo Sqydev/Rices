@@ -146,7 +146,6 @@ case "$ID" in
         printf "  %s\n" "${missing_pkgs[@]}"
         echo
         echo "After installing them, run this script again."
-        exit 1
         ;;
 esac
 
