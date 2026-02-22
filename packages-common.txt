@@ -7,3 +7,4 @@ waybar
 hyprshot
 waypaper
 swww
+rofi

@@ -85,4 +85,4 @@ multiplier = 5
 [terminal]
 
 [terminal.shell]
-program = "/run/current-system/sw/bin/fish"
+program = "fish"

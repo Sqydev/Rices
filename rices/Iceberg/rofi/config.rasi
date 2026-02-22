@@ -1,0 +1,30 @@
+@theme "gruvbox-dark.rasi"
+
+* {
+	border: 0;
+	border-radius: 2;
+	margin: 0;
+	padding: 3;	
+	color: #d5c4a1;
+}
+
+configuration {
+  	font: "JetBrainsMono Nerd Font 12";
+	display-drun: "";
+  	modi: "drun";
+  	show-icons: false;
+  	drun-display-format: "{name}";
+}
+
+window {
+	width: 450px;
+}
+
+listview {
+	lines: 8;
+	scrollbar: false;
+}
+
+keyboard {
+    cancel: "none";
+}
