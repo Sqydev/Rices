@@ -6,3 +6,4 @@ oh-my-posh
 waybar
 hyprshot
 waypaper
+swww
