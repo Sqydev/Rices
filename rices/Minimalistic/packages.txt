@@ -1,1 +1,3 @@
 rofi
+waypaper
+sddm
