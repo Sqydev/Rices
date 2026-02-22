@@ -4,6 +4,4 @@ fastfetch
 hyprland
 oh-my-posh
 waybar
-waypaper
 hyprshot
-sddm
