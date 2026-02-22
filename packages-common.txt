@@ -5,3 +5,4 @@ hyprland
 oh-my-posh
 waybar
 hyprshot
+waypaper
