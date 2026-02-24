@@ -8,3 +8,4 @@ hyprshot
 waypaper
 swww
 rofi
+hypridle
