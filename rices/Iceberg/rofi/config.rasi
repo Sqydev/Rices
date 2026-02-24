@@ -24,7 +24,3 @@ listview {
 	lines: 8;
 	scrollbar: false;
 }
-
-keyboard {
-    cancel: "none";
-}
