@@ -26,8 +26,20 @@ fi
 
 hyprctl dispatch togglespecialworkspace control
 
-rofi -show drun
+while true; do
+	rofi -show drun
+	exit_code=$?
 
-# TODO: Here if shift is held than just restart rofi
+	if [[ $exit_code -eq 0 ]]; then
+    	break
+    fi
+	
+	if [[ $exit_code -eq 10 ]]; then
+        continue
+    fi
+
+	hyprctl dispatch togglespecialworkspace control
+	break
+done
 
 hyprctl dispatch togglespecialworkspace control
