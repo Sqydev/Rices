@@ -30,15 +30,10 @@ while true; do
 	rofi -show drun
 	exit_code=$?
 
-	if [[ $exit_code -eq 0 ]]; then
-    	break
-    fi
-	
 	if [[ $exit_code -eq 10 ]]; then
         continue
     fi
 
-	hyprctl dispatch togglespecialworkspace control
 	break
 done
 
