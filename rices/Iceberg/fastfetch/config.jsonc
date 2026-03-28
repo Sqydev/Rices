@@ -60,6 +60,11 @@
             "type": "disk",
             "folders": "/home"
         },
+		{
+    		"key": "│ {#34}󰉉 nix     {#keys}│",
+    		"type": "disk",
+    		"folders": "/nix"
+		},
         {
             "key": "│ {#35} memory  {#keys}│",
             "type": "memory"
