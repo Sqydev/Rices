@@ -63,7 +63,7 @@
 		{
     		"key": "│ {#34}󰉉 nix     {#keys}│",
     		"type": "disk",
-    		"folders": "/nix"
+    		"folders": "/"
 		},
         {
             "key": "│ {#35} memory  {#keys}│",
