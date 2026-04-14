@@ -1,4 +1,3 @@
 ly
 fzf
 jq
-kitty
