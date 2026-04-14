@@ -1,12 +1,12 @@
-// Inspired by Catnap
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
+		"type": "chafa",
     	"padding": {
       		"top": 1,
 			"right": 7
     	},
-    	"source": "~/.config/fastfetch/icon.png",
+    	"source": "~/.config/fastfetch/icon.png"
 	},
 	"display": {
         "separator": " "
