@@ -1,3 +1,4 @@
 ly
 fzf
 jq
+kitty
