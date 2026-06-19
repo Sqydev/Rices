@@ -1,4 +1,3 @@
--- Ustawienia klawiatury, myszki i touchpadu
 hl.config({
     input = {
         kb_layout = "pl",
