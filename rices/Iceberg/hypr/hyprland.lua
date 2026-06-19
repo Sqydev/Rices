@@ -1,0 +1,7 @@
+require("conf/Keybinds")
+require("conf/StartTasks")
+require("conf/KeyboardSettings")
+require("conf/MonitorSettings")
+require("conf/EnviermentSettings")
+require("conf/LooksAndFeels")
+require("conf/ControlWorkspace")
