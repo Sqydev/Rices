@@ -1,4 +1,3 @@
--- Wygląd, estetyka oraz XWayland
 hl.config({
     general = {
         gaps_in = 2,

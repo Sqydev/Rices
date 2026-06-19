@@ -1,4 +1,3 @@
--- Programy uruchamiane automatycznie przy starcie (Autostart / exec-once)
 hl.on("hyprland.start", function()
     hl.exec_cmd("waypaper --restore")
     hl.exec_cmd("hypridle")

@@ -1,6 +1,7 @@
 local mainMod = "SUPER"
 
--- Normal things
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("bash $HOME/.config/Rices/rices/Iceberg/scripts/launcher.bash"))
+
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("librewolf"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("hyprshot -m output --output-folder ~/Screenshots"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))

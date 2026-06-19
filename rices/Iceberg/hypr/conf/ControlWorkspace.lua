@@ -1,16 +1,45 @@
--- Reguły przestrzeni roboczych oraz okien (Window Rules v2)
 hl.config({
     workspace = {
-        "special:control, floating:true"
+        {
+            id = "special:control",
+            floating = true,
+        },
     },
-    windowrulev2 = {
-        "workspace special:control, class:^(Btop)$",
-        "float, class:^(Btop)$",
-        "size 45% 55%, class:^(Btop)$",
-        "move 5% 5%, class:^(Btop)$",
-        
-        "workspace special:control, class:^(Rofi)$",
-        "float, class:^(Rofi)$",
-        "center, class:^(Rofi)$",
-    }
+})
+
+-- Btop
+hl.window_rule({
+    match = { class = "^(Btop)$" },
+    workspace = "special:control",
+})
+
+hl.window_rule({
+    match = { class = "^(Btop)$" },
+    float = true,
+})
+
+hl.window_rule({
+    match = { class = "^(Btop)$" },
+    size = { "(monitor_w * 0.35)" , "(monitor_h * 0.45)" },
+})
+
+hl.window_rule({
+    match = { class = "^(Btop)$" },
+    move = {"window_w * 0.04", "monitor_h * 0.03"},
+})
+
+-- Rofi
+hl.window_rule({
+    match = { class = "^(Rofi)$" },
+    workspace = "special:control",
+})
+
+hl.window_rule({
+    match = { class = "^(Rofi)$" },
+    float = true,
+})
+
+hl.window_rule({
+    match = { class = "^(Rofi)$" },
+    center = true,
 })

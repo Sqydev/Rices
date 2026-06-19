@@ -1,4 +1,3 @@
--- Zmienne środowiskowe (Environment Variables)
 hl.env("HYPRCURSOR_THEME", "BreezeX")
 hl.env("XCURSOR_THEME", "BreezeX")
 hl.env("XCURSOR_SIZE", "24")
