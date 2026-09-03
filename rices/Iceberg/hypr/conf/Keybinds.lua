@@ -5,7 +5,7 @@ hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("bash $HOME/.config/Rices/rices/
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("librewolf"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("hyprshot -m output --output-folder ~/Screenshots"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("kitty concord"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("steam"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("alacritty"))
 
