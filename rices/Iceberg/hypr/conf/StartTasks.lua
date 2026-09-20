@@ -1,7 +1,6 @@
 hl.on("hyprland.start", function()
     hl.exec_cmd("waypaper --restore")
     hl.exec_cmd("hypridle")
-    hl.exec_cmd("discord")
     hl.exec_cmd("flatpak run com.valvesoftware.Steam")
     hl.exec_cmd("steam")
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
