@@ -3,8 +3,9 @@
     "logo": {
 		"type": "chafa",
     	"padding": {
-      		"top": 1,
-			"right": 7
+      		"top": 3,
+			"right": 5,
+			"left": 5
     	},
     	"source": "~/.config/fastfetch/icon.png"
 	},
