@@ -6,6 +6,6 @@ oh-my-posh
 waybar
 hyprshot
 waypaper
-swww
+awww
 rofi
 hypridle
