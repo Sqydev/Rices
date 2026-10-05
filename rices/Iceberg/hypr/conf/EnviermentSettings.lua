@@ -1,5 +1,5 @@
-hl.env("HYPRCURSOR_THEME", "BreezeX")
-hl.env("XCURSOR_THEME", "BreezeX")
+hl.env("HYPRCURSOR_THEME", "rose-pine-hyprcursor")
+hl.env("XCURSOR_THEME", "BreezeX-RosePine")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("XDG_SESSION_TYPE", "wayland")
