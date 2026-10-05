@@ -9,5 +9,3 @@ waypaper
 awww
 rofi
 hypridle
-rose-pine-hyprcursor
-rose-pine-cursor
