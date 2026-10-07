@@ -1,4 +1,7 @@
 hl.on("hyprland.start", function()
+    hl.exec_cmd("pipewire")
+    hl.exec_cmd("pipewire-pulse")
+    hl.exec_cmd("wireplumber")
     hl.exec_cmd("waypaper --restore")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("flatpak run com.valvesoftware.Steam")
